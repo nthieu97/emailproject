@@ -1,0 +1,17 @@
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">sender</th>
+      <th scope ="col">Subject</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of listPreview">
+      <td>{{p.from}}</td>
+      <td style="font-weight: bolder;">{{p.subject}}</td>
+      <td>{{p.date | date:'yyy-MM-dd'}}</td>
+    </tr>
+  </tbody>
+</table>
+  

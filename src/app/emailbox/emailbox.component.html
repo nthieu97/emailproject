@@ -1,0 +1,13 @@
+<div class="d-flex w-100">
+    <div class="list-group">
+      <a *ngFor="let item of listItem" class="list-group-item list-group-item-action p-3" (click)="handleClick($event.target.innerText)" [textContent]="item" routerLinkActive="active">
+       {{ item }}
+      </a>
+    </div>
+    <div class="table">
+      <router-outlet></router-outlet>
+    </div>
+
+</div>
+<router-outlet name='detail'></router-outlet>
+

@@ -1,0 +1,5 @@
+tr:hover td{
+  background-color: dodgerblue;
+  color: whitesmoke;
+  cursor: pointer;
+}

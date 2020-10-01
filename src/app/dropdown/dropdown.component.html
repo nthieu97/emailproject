@@ -1,0 +1,6 @@
+<div class="dropdown">
+  <select class="custom-select" (change)="handleChange($event.target.value);">
+    <option value=""selected>Select user</option>
+    <option  *ngFor="let u of users"  >{{u}}</option>
+  </select>
+</div>
